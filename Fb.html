@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>Blogs-The India I'm Building</title>
+</head>
+<body>
+  <!-- XXXXXX----NAVIGATION BAR ----XXXXXXXXXXXX -->
+  <nav>
+      <input type="checkbox" id="check" />
+      <label for="check">
+        <i class="fa fa-navicon" id="btn"></i>
+        <i class="fa fa-times" id="cancel"></i>
+      </label>
+      <a href="index.html"> <img src="logo.svg" alt="" /></a>
+      <ul class="list">
+        <li><a href="podcast.html">Podcast</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>
+          <a href="https://view.flodesk.com/pages/6396fff45be9368ced019820"
+            >Subscribe</a
+          >
+        </li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="head-container">
+      <h1>BLOGS</h1>
+      <div class="search">
+        <form action="" class="search-m">
+          <button type="submit">
+            <a href="#"><img src=" search.svg" alt="" /></a>
+          </button>
+          <input type="text" placeholder="Search Articles" name="q" />
+        </form>
+      </div>
+    </div>
+  <div class="blog-head">
+    <div class="tag">
+      <a href="" onclick="changeCategory(1)" class="tag-name active">Trending</a>
+      <a href="" onclick="changeCategory(2)" class="tag-name">Technology</a>
+      <a href="" onclick="changeCategory(3)" class="tag-name">Lifestyle and Mentality</a>
+      <a href="" onclick="changeCategory(4)" class="tag-name">Student Life</a>
+      <a href="https://docs.google.com/forms/d/1jDeEzClb5ALILXeW5YWIHD9siZUzagN62DRWHe9lSXU/edit"  class="tag-name">Contribute</a>
+    </div>
+    <div class="b-h">
+      <div class="t">
+        <h1 class="t-title">Trending blog title</h1>
+        <p class="t-des">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatum deleniti eaque hic nam aut.
+        </p>
+      </div>
+      <img src="trendingblog.svg" alt="" id="t-img"/>
+    </div>
+    <div class="b-h" id="two">
+      <div class="h-blog">
+        <div class="h-banner"><img " src="img.svg" alt=""></div>
+        <div class="h-text-a">
+          <button class="btn" onclick="openpopup()">
+            <a class="h-title" href="#"><h3>This Is Second Title</h3></a>
+          </button>
+          <p class="h-descp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+            Consequatur voluptatem magni enim eveniet quisquam obcaecati
+            consequuntur!
+          </p>
+          <div class="h-author">
+            <img src="author.svg" alt="" />
+            <div class="h-a-info">
+              <a href="#">Author Name</a>
+              <h6>10/12/22</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="s-blog">
+        <div class="s">
+          <div class="s-tag">
+            <a href="#">Category</a>
+          </div>
+
+          <a class="s-title" href="#" style="padding-bottom: 5px"
+            ><h3>This is title</h3></a
+          >
+
+          <p class="s-descp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius
+            nesciunt deserunt eos tempora iure explicabo modi sequi pariatur
+            accusamus!
+          </p>
+          <div class="s-author">
+            <img src="author.svg" alt="" />
+            <div class="s-a-info">
+              <a href="#">Author Name</a>
+              <h6>10/12/22</h6>
+            </div>
+          </div>
+        </div>
+        <div class="s">
+          <div class="s-tag">
+            <a href="#">Category</a>
+          </div>
+
+          <a class="s-title" href="#" style="padding-bottom: 5px"
+            ><h3>This is title</h3></a
+          >
+
+          <p class="s-descp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius
+            nesciunt deserunt eos tempora iure explicabo modi sequi pariatur
+            accusamus!
+          </p>
+          <div class="s-author">
+            <img src="author.svg" alt="" />
+            <div class="s-a-info">
+              <a href="#">Author Name</a>
+              <h6>10/12/22</h6>
+            </div>
+          </div>
+        </div>
+        <div class="s">
+          <div class="s-tag">
+            <a href="#">Category</a>
+          </div>
+
+          <a
+            class="s-title"
+            href="#"
+            style="padding-bottom: 5px; padding-left: 5px"
+            ><h3>This is title</h3></a
+          >
+
+          <p class="s-descp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius
+            nesciunt deserunt eos tempora iure explicabo modi sequi pariatur
+            accusamus!
+          </p>
+          <div class="s-author">
+            <img src="author.svg" alt="" />
+            <div class="s-a-info">
+              <a href="#">Author Name</a>
+              <h6>10/12/22</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-h" id="three">
+      <div class="h-blog">
+        <div class="h-banner"><img " src="img.svg" alt=""></div>
+        <div class="h-text-a">
+          <button class="btn" onclick="openpopup()">
+            <a class="h-title" href="#"><h3>This Is Second Title</h3></a>
+          </button>
+          <p class="h-descp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+            Consequatur voluptatem magni enim eveniet quisquam obcaecati
+            consequuntur!
+          </p>
+          <div class="h-author">
+            <img src="author.svg" alt="" />
+            <div class="h-a-info">
+              <a href="#">Author Name</a>
+              <h6>10/12/22</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="s-blog">
+        <div class="s">
+          <div class="s-tag">
+            <a href="#">Category</a>
+          </div>
+
+          <a class="s-title" href="#" style="padding-bottom: 5px"
+            ><h3>This is title</h3></a
+          >
+
+          <p class="s-descp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius
+            nesciunt deserunt eos tempora iure explicabo modi sequi pariatur
+            accusamus!
+          </p>
+          <div class="s-author">
+            <img src="author.svg" alt="" />
+            <div class="s-a-info">
+              <a href="#">Author Name</a>
+              <h6>10/12/22</h6>
+            </div>
+          </div>
+        </div>
+        <div class="s">
+          <div class="s-tag">
+            <a href="#">Category</a>
+          </div>
+
+          <a class="s-title" href="#" style="padding-bottom: 5px"
+            ><h3>This is title</h3></a
+          >
+
+          <p class="s-descp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius
+            nesciunt deserunt eos tempora iure explicabo modi sequi pariatur
+            accusamus!
+          </p>
+          <div class="s-author">
+            <img src="author.svg" alt="" />
+            <div class="s-a-info">
+              <a href="#">Author Name</a>
+              <h6>10/12/22</h6>
+            </div>
+          </div>
+        </div>
+        <div class="s">
+          <div class="s-tag">
+            <a href="#">Category</a>
+          </div>
+
+          <a
+            class="s-title"
+            href="#"
+            style="padding-bottom: 5px; padding-left: 5px"
+            ><h3>This is title</h3></a
+          >
+
+          <p class="s-descp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius
+            nesciunt deserunt eos tempora iure explicabo modi sequi pariatur
+            accusamus!
+          </p>
+          <div class="s-author">
+            <img src="author.svg" alt="" />
+            <div class="s-a-info">
+              <a href="#">Author Name</a>
+              <h6>10/12/22</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-h" id="four">
+      <div class="h-blog">
+        <div class="h-banner"><img " src="img.svg" alt=""></div>
+        <div class="h-text-a">
+          <button class="btn" onclick="openpopup()">
+            <a class="h-title" href="#"><h3>This Is Second Title</h3></a>
+          </button>
+          <p class="h-descp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+            Consequatur voluptatem magni enim eveniet quisquam obcaecati
+            consequuntur!
+          </p>
+          <div class="h-author">
+            <img src="author.svg" alt="" />
+            <div class="h-a-info">
+              <a href="#">Author Name</a>
+              <h6>10/12/22</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="s-blog">
+        <div class="s">
+          <div class="s-tag">
+            <a href="#">Category</a>
+          </div>
+
+          <a class="s-title" href="#" style="padding-bottom: 5px"
+            ><h3>This is title</h3></a
+          >
+
+          <p class="s-descp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius
+            nesciunt deserunt eos tempora iure explicabo modi sequi pariatur
+            accusamus!
+          </p>
+          <div class="s-author">
+            <img src=" author.svg" alt="" />
+            <div class="s-a-info">
+              <a href="#">Author Name</a>
+              <h6>10/12/22</h6>
+            </div>
+          </div>
+        </div>
+        <div class="s">
+          <div class="s-tag">
+            <a href="#">Category</a>
+          </div>
+
+          <a class="s-title" href="#" style="padding-bottom: 5px"
+            ><h3>This is title</h3></a
+          >
+
+          <p class="s-descp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius
+            nesciunt deserunt eos tempora iure explicabo modi sequi pariatur
+            accusamus!
+          </p>
+          <div class="s-author">
+            <img src="  author.svg" alt="" />
+            <div class="s-a-info">
+              <a href="#">Author Name</a>
+              <h6>10/12/22</h6>
+            </div>
+          </div>
+        </div>
+        <div class="s">
+          <div class="s-tag">
+            <a href="#">Category</a>
+          </div>
+
+          <a
+            class="s-title"
+            href="#"
+            style="padding-bottom: 5px; padding-left: 5px"
+            ><h3>This is title</h3></a
+          >
+
+          <p class="s-descp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius
+            nesciunt deserunt eos tempora iure explicabo modi sequi pariatur
+            accusamus!
+          </p>
+          <div class="s-author">
+            <img src="  author.svg" alt="" />
+            <div class="s-a-info">
+              <a href="#">Author Name</a>
+              <h6>10/12/22</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="all-blogs-section">
+    <div class="b" style="grid-area: b1;">
+      <div class="b-banner"><img " src="  img.svg" alt=""></div>
+      <div class="b-text-a">
+        <a class="b-title" href="#"><h3>This Is Title</h3></a>
+        <p class="b-descp">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+          Consequatur voluptatem magni enim eveniet quisquam obcaecati
+          consequuntur!
+        </p>
+        <div class="b-author">
+          <img src="  author.svg" alt="" />
+          <div class="b-a-info">
+            <a href="#">Author Name</a>
+            <h6>10/12/22</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b" style="grid-area: b2;">
+      <div class="b-banner"><img " src="  img.svg" alt=""></div>
+      <div class="b-text-a">
+        <a class="b-title" href="#"><h3>This Is Title</h3></a>
+        <p class="b-descp">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+          Consequatur voluptatem magni enim eveniet quisquam obcaecati
+          consequuntur!
+        </p>
+        <div class="b-author">
+          <img src="  author.svg" alt="" />
+          <div class="b-a-info">
+            <a href="#">Author Name</a>
+            <h6>10/12/22</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b" style="grid-area: b3;">
+      <div class="b-banner"><img " src="  img.svg" alt=""></div>
+      <div class="b-text-a">
+        <a class="b-title" href="#"><h3>This Is Title</h3></a>
+        <p class="b-descp">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+          Consequatur voluptatem magni enim eveniet quisquam obcaecati
+          consequuntur!
+        </p>
+        <div class="b-author">
+          <img src="  author.svg" alt="" />
+          <div class="b-a-info">
+            <a href="#">Author Name</a>
+            <h6>10/12/22</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b" style="grid-area: b4;">
+      <div class="b-banner"><img " src="  img.svg" alt=""></div>
+      <div class="b-text-a">
+        <a class="b-title" href="#"><h3>This Is Title</h3></a>
+        <p class="b-descp">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+          Consequatur voluptatem magni enim eveniet quisquam obcaecati
+          consequuntur!
+        </p>
+        <div class="b-author">
+          <img src="  author.svg" alt="" />
+          <div class="b-a-info">
+            <a href="#">Author Name</a>
+            <h6>10/12/22</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b" style="grid-area: b5;">
+      <div class="b-banner"><img " src="  img.svg" alt=""></div>
+      <div class="b-text-a">
+        <a class="b-title" href="#"><h3>This Is Title</h3></a>
+        <p class="b-descp">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+          Consequatur voluptatem magni enim eveniet quisquam obcaecati
+          consequuntur!
+        </p>
+        <div class="b-author">
+          <img src="  author.svg" alt="" />
+          <div class="b-a-info">
+            <a href="#">Author Name</a>
+            <h6>10/12/22</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b" style="grid-area: b6;">
+      <div class="b-banner"><img " src="  img.svg" alt=""></div>
+      <div class="b-text-a">
+        <a class="b-title" href="#"><h3>This Is Title</h3></a>
+        <p class="b-descp">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+          Consequatur voluptatem magni enim eveniet quisquam obcaecati
+          consequuntur!
+        </p>
+        <div class="b-author">
+          <img src="  author.svg" alt="" />
+          <div class="b-a-info">
+            <a href="#">Author Name</a>
+            <h6>10/12/22</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b" style="grid-area: b7;">
+      <div class="b-banner"><img " src="  img.svg" alt=""></div>
+      <div class="b-text-a">
+        <a class="b-title" href="#"><h3>This Is Title</h3></a>
+        <p class="b-descp">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+          Consequatur voluptatem magni enim eveniet quisquam obcaecati
+          consequuntur!
+        </p>
+        <div class="b-author">
+          <img src="  author.svg" alt="" />
+          <div class="b-a-info">
+            <a href="#">Author Name</a>
+            <h6>10/12/22</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b" style="grid-area: b8;">
+      <div class="b-banner"><img " src="  img.svg" alt=""></div>
+      <div class="b-text-a">
+        <a class="b-title" href="#"><h3>This Is Title</h3></a>
+        <p class="b-descp">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+          Consequatur voluptatem magni enim eveniet quisquam obcaecati
+          consequuntur!
+        </p>
+        <div class="b-author">
+          <img src="  author.svg" alt="" />
+          <div class="b-a-info">
+            <a href="#">Author Name</a>
+            <h6>10/12/22</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b" style="grid-area: b9;">
+      <div class="b-banner"><img " src="  img.svg" alt=""></div>
+      <div class="b-text-a">
+        <a class="b-title" href="#"><h3>This Is Title</h3></a>
+        <p class="b-descp">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+          Consequatur voluptatem magni enim eveniet quisquam obcaecati
+          consequuntur!
+        </p>
+        <div class="b-author">
+          <img src="  author.svg" alt="" />
+          <div class="b-a-info">
+            <a href="#">Author Name</a>
+            <h6>10/12/22</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b" style="grid-area: b10;">
+      <div class="b-banner"><img " src="  img.svg" alt=""></div>
+      <div class="b-text-a">
+        <a class="b-title" href="#"><h3>This Is Title</h3></a>
+        <p class="b-descp">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+          Consequatur voluptatem magni enim eveniet quisquam obcaecati
+          consequuntur!
+        </p>
+        <div class="b-author">
+          <img src="  author.svg" alt="" />
+          <div class="b-a-info">
+            <a href="#">Author Name</a>
+            <h6>10/12/22</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b" style="grid-area: b11;">
+      <div class="b-banner"><img " src="  img.svg" alt=""></div>
+      <div class="b-text-a">
+        <a class="b-title" href="#"><h3>This Is Title</h3></a>
+        <p class="b-descp">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+          Consequatur voluptatem magni enim eveniet quisquam obcaecati
+          consequuntur!
+        </p>
+        <div class="b-author">
+          <img src="  author.svg" alt="" />
+          <div class="b-a-info">
+            <a href="#">Author Name</a>
+            <h6>10/12/22</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b" style="grid-area: b12;">
+      <div class="b-banner"><img " src="  img.svg" alt=""></div>
+      <div class="b-text-a">
+        <a class="b-title" href="#"><h3>This Is Title</h3></a>
+        <p class="b-descp">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          rerum ducimus dolores ad itaque molestiae nemo voluptatem.
+          Consequatur voluptatem magni enim eveniet quisquam obcaecati
+          consequuntur!
+        </p>
+        <div class="b-author">
+          <img src="  author.svg" alt="" />
+          <div class="b-a-info">
+            <a href="#">Author Name</a>
+            <h6>10/12/22</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script>
+    let tags = document.querySelectorAll(".tag-name");
+    let bhs = document.querySelectorAll(".b-h");
+
+    function openpopup() {
+          overlay.style.display = "flex"
+    }
+    function closepopup() {
+      overlay.style.display = "none"
+    }
+    function changeCategory(n){
+      event.preventDefault();
+      tags.forEach((tag) => {
+          tag.classList.remove("active");
+      })
+
+      bhs.forEach((bh) => {
+          bh.style.display = "none";
+      })
+
+      if(bhs.length >= n){
+          bhs[n-1].style.display = "flex";
+      }
+
+      tags[n-1].classList.add("active");
+    }
+  </script>
+</body>
+</html>
